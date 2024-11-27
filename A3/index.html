@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Eleição Escolar</h1>
+        <nav class="nav-menu">
+            <a href="/eleitores.html">Eleitores</a>
+            <a href="/ajuda.html">Ajuda</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bem-vindos à Eleição Escolar</h2>
+            <p>Neste site, todos terão a oportunidade de escolher, de forma democrática, o colega que será responsável por representar os interesses e as necessidades da turma. O objetivo principal da eleição é <strong>promover um ambiente de convivência mais saudável</strong> e <strong>estimular uma comunicação mais integrada</strong> entre os alunos e a coordenação.</p>
+            
+            <p>É essencial que cada um de nós participe deste processo, pois a escolha de um representante é mais do que uma formalidade — é um <strong>compromisso coletivo</strong> em construir uma sala unida, onde todos se sintam ouvidos e valorizados.</p>
+            
+            <p>A função de um representante de sala é atuar como um ponto de contato entre os estudantes e a escola, trazendo para discussão <strong>temas importantes</strong> e <strong>sugerindo melhorias</strong> que beneficiem a todos. É o representante quem ajuda a manter o diálogo aberto com a direção, levantando questões sobre a rotina escolar, projetos, eventos e possíveis desafios que enfrentamos ao longo do ano.</p>
+            
+            <p>Dessa forma, a <strong>participação ativa de cada aluno na eleição</strong> é fundamental para que possamos escolher alguém que realmente nos represente, compreenda nossas necessidades e esteja disposto a trabalhar por um <strong>ambiente de aprendizado colaborativo</strong>.</p>
+        </section>
+
+        <section class="candidates">
+            <div class="candidate">
+                <img src="candiidato1.png" alt="Lucas Ferreira">
+                <button class="info-button" data-name="Lucas Ferreira" data-age="19" data-course="Engenharia de Software" data-semester="2" data-quote="Eficiência e estrutura para uma universidade melhor.">Saiba mais</button>
+                <p class="candidatos">Lucas Ferreira</p>
+                <p>"Eficiência e estrutura para uma universidade melhor."</p>
+            </div>
+            <div class="candidate">
+                <img src="candiidato2.png" alt="Maria Oliveira">
+                <button class="info-button" data-name="Maria Oliveira" data-age="20" data-course="Ciencia Da Computação" data-semester="3" data-quote="Engajamento e propósito para uma universidade melhor.">Saiba mais</button>
+                <p class="candidatos">Maria Oliveira</p>
+                <p>"Engajamento e propósito para uma universidade melhor."</p>
+            </div>
+            <div class="candidate">
+                <img src="candiidato3.png" alt="João Silva">
+                <button class="info-button" data-name="João Silva" data-age="21" data-course="Analise e Desenvolvimento de Sistemas" data-semester="4" data-quote="Representatividade real: suas ideias em ação.">Saiba mais</button>
+                <p class="candidatos">João Silva</p>
+                <p>"Representatividade real: suas ideias em ação."</p>
+            </div>
+            <div class="candidate">
+                <img src="candiidato4.png" alt="Ana Souza">
+                <button class="info-button" data-name="Ana Souza" data-age="22" data-course="Ciencia Da Computação" data-semester="5" data-quote="Bem-estar e acolhimento para o sucesso de todos.">Saiba mais</button>
+                <p class="candidatos">Ana Souza</p>
+                <p>"Bem-estar e acolhimento para o sucesso de todos."</p>
+            </div>
+        </section>
+    </main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="modal-body">
+          <img id="modal-image" src="" alt="Imagem do Candidato" class="modal-image" />
+          <div class="modal-info">
+              <h2 id="modal-name">Nome do Candidato</h2>
+              <p id="modal-quote">Citação ou descrição sobre o candidato.</p>
+              <p id="modal-age">Idade: <strong>30 anos</strong></p>
+              <p id="modal-course">Curso: <strong>Engenharia de Software</strong></p>
+              <p id="modal-semester">Semestre: <strong>6º</strong></p>
+              <a id="vote-button" href="/eleitores.html">
+                  Vote
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<footer class="footer">
+  <p>&copy; 2024 Eleição Escolar. Todos os direitos reservados.</p>
+  <nav class="footer-nav">
+      <a href="index.html">Início</a>
+      <a href="eleitores.html">Eleitores</a>
+      <a href="ajuda.html">Ajuda</a>
+  </nav>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

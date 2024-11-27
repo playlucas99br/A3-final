@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos</title>
+    <link rel="stylesheet" href="stylescandidats.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Eleição Escolar</h1>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="eleitores.html">Eleitores</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="candidates" id="candidates">
+            <div class="candidate-card" id="candidate-1">
+                <img src="candiidato1.png" alt="Lucas Ferreira">
+                <h2>Lucas Ferreira</h2>
+                <p><strong>Curso:</strong> Ciência da Computação</p>
+                <p><strong>Idade:</strong> 19</p>
+                <p><strong>Semestre:</strong> 2</p>
+                <p><strong>Frase de impacto:</strong> "Eficiência e estrutura para uma universidade melhor."</p>
+                <p><strong>Descrição:</strong> Olá, pessoal! Sou Lucas Ferreira e acredito que uma boa gestão começa com organização e foco. Meu objetivo como representante é garantir que tenhamos uma estrutura funcional.</p>
+                <button class="vote-btn" name="vote-btn" onclick="openVoteModal('Lucas Ferreira', 1)" data-candidate-id="1">Votar</button>
+            </div>
+
+            <div class="candidate-card" id="candidate-2">
+                <img src="candiidato2.png" alt="Maria Oliveira">
+                <h2>Maria Oliveira</h2>
+                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+                <p><strong>Idade:</strong> 20</p>
+                <p><strong>Semestre:</strong> 3</p>
+                <p><strong>Frase de impacto:</strong> "Engajamento e propósito para uma universidade melhor."</p>
+                <p><strong>Descrição:</strong> Olá, sou Maria Oliveira. Estou aqui para representar cada um de vocês, buscando sempre engajamento e um propósito forte para que juntos possamos transformar nossa universidade.</p>
+                <button class="vote-btn" onclick="openVoteModal('Maria Oliveira', 2)" data-candidate-id="2">Votar</button>
+            </div>
+
+            <div class="candidate-card" id="candidate-3">
+                <img src="candiidato3.png" alt="João Silva">
+                <h2>João Silva</h2>
+                <p><strong>Curso:</strong> Engenharia de Software</p>
+                <p><strong>Idade:</strong> 21</p>
+                <p><strong>Semestre:</strong> 4</p>
+                <p><strong>Frase de impacto:</strong> "Representatividade real: suas ideias em ação."</p>
+                <p><strong>Descrição:</strong> Olá, sou João Silva, e estou comprometido com a representatividade. Meu objetivo é trazer suas ideias à tona e fazer delas uma realidade no nosso campus.</p>
+                <button class="vote-btn" name="vote-btn" onclick="openVoteModal('João Silva', 3)" data-candidate-id="3">Votar</button>
+            </div>
+
+            <div class="candidate-card" id="candidate-4">
+                <img src="candiidato4.png" alt="Ana Souza">
+                <h2>Ana Souza</h2>
+                <p><strong>Curso:</strong> Engenharia de Software</p>
+                <p><strong>Idade:</strong> 22</p>
+                <p><strong>Semestre:</strong> 5</p>
+                <p><strong>Frase de impacto:</strong> "Bem-estar e acolhimento para o sucesso de todos."</p>
+                <p><strong>Descrição:</strong> Oi, sou Ana Souza. Acredito que o bem-estar e o acolhimento são fundamentais para o sucesso de todos. Estou aqui para garantir que todos se sintam ouvidos e valorizados.</p>
+                <button class="vote-btn" name="vote-btn" onclick="openVoteModal('Ana Souza', 4)" data-candidate-id="4">Votar</button>
+            </div>
+        </section>
+
+        <!-- Estatísticas de Votos -->
+        <section class="vote-stats">
+            <h3>Estatísticas de Votos</h3>
+            <!-- Estatísticas serão inseridas dinamicamente pelo JavaScript -->
+        </section>
+        
+    </main>
+
+    <!-- Modal de votação -->
+    <div id="vote-modal" class="vote-modal">
+        <div class="vote-modal-content">
+            <span class="close-btn" onclick="closeVoteModal()">&times;</span>
+            <h2>Votação</h2>
+            <form id="vote-form">
+                <label for="ra">RA:</label>
+                <input type="text" id="ra" name="ra" required>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <button type="submit">Votar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Eleição Escolar. Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Início</a>
+            <a href="eleitores.html">Eleitores</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
+    </footer>
+
+    <script src="scriptcandidates.js"></script>
+</body>
+</html>
